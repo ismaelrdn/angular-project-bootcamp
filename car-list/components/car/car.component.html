@@ -1,0 +1,26 @@
+<div *ngIf="carToShow" class="card">
+  <div>
+    <img class="card-img-top img" [src]="carToShow.image" />
+      <div class="card-body">
+        <h2 class="card-title text-strong display-3">{{ carToShow.model | titlecase | uppercase }}</h2>
+        <h3 class="card-text text-muted display-6">{{ carToShow.vehicle | uppercase}}</h3>
+        <h3 class="car__vehicle text-muted display-6">{{ carToShow.price }}0 €</h3>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="row">
+        <button class="col btn btn-lg btn-primary bg-white text-dark border-dark" (click)="navigateToDetail(carToShow.id)">
+          CAR DETAIL
+        </button>
+        
+        <button class="col btn btn-primary bg-white text-dark border-dark" (click)="navigateToEditCar(carToShow.id)">
+          EDIT YOUR CAR
+        </button>
+
+        <button class="col btn btn-primary bg-orange border-dark" (click)="removeCar()">
+          REMOVE
+        </button>
+      </div>
+  </div>
+</div>

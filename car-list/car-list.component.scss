@@ -1,0 +1,26 @@
+.car-list {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgba(31, 28, 28, 0.349);
+    
+
+    &__card {
+        margin: 30px;
+        width: 250;
+        border-color: grey;
+    }
+
+}
+
+.input{
+    height: 50px;
+    font-size: 50px;
+    padding: 60px;
+    letter-spacing: 10px;
+    background-color: grey;
+    color: white;
+
+} ::placeholder {
+    color: white;
+}

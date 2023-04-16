@@ -1,0 +1,8 @@
+<div *ngIf="car">
+
+<p class="edit-p display-2 text-center">Modify your {{car.vehicle}}</p>
+<app-form
+    [car]="car"
+    [isEditMode]="true"
+></app-form>
+</div>

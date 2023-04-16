@@ -1,0 +1,37 @@
+.home {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: grey;
+}
+
+.home::before{
+    content: "";
+    background-image: url(https://files.porsche.com/filestore/image/multimedia/none/982-718spyder-modelimage-sideshot/model/d9552a39-8616-11e9-80c4-005056bbdc38/porsche-model.png);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.3;
+}
+
+.h1-home {
+    margin-top: 50px;
+    font-size: 200px;
+    -webkit-text-decoration: underline orange;
+    text-decoration: underline orange;
+}
+
+.h1-home:hover {
+    content: "";
+    -webkit-text-decoration: underline orange;
+            text-decoration: underline orange;
+    color: white;
+}
+
+

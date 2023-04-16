@@ -1,0 +1,15 @@
+<input class="input form-control mr-sm-2 display-1" type="search" placeholder="Search" aria-label="Search "
+    [(ngModel)]="inputValue"
+>
+
+<div 
+    class="car-list align-items-center justify-content-center"
+    *ngIf="cars">
+    <app-car
+        class="car-list__card"
+        *ngFor="let car of cars | filter:inputValue"
+        [carToShow]="car"
+        (onRemoveCar)="removeCar(car.id)">
+    </app-car>
+</div>
+
